@@ -185,7 +185,8 @@ async function resendEmail(values) {
         localStorage.setItem("otpExpiration",data.otpExpiration)
       }
       setTimeout(function () {
-        $(location).prop('href', './otp.html')
+        $(location).prop('href', './login.html
+        ')
       }, 3000)
     },
     error: function () {

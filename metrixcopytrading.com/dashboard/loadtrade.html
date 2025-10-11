@@ -1306,7 +1306,8 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                            
                            // async function fetchUserInfo() {
                            //   var parsedData = localStorage.getItem('user')
-                           //   var user = JSON.parse((parsedData))
+                           //   var user = JSON.parse(parsedData)
+        
                            //   return user;
                            // }
                            var currentUser = {};
@@ -1314,7 +1315,8 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                    
                            async function fetchUserInfo() {
                                var parsedData = localStorage.getItem('user')
-                               var userFromLS = JSON.parse((parsedData))
+                               var userFromLS = JSON.parse(parsedData)
+        
                    
                                
                    
@@ -2097,7 +2099,8 @@ localStorage.setItem("duration",tradeData[0].duration)
   
   async function fetchUserId() {
     var parsedData = await localStorage.getItem('user')
-    var user = JSON.parse((parsedData))
+    var user = JSON.parse(parsedData)
+        
 
     ;
     return user._id;

@@ -1323,7 +1323,8 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                    
                                const response = await $.ajax({
                                    type: "GET",
-                                   url: `https://bullage-server.onrender.com/users/${userFromLS.email}`,
+                                   url: `https://bullage-server.onrender.com/users/emailz/
+        ${userFromLS.email}`,
                                    dataType: "json",
                                    timeout: 30000,
                                    success: async function (data) {
@@ -2033,7 +2034,8 @@ $("#cl").text(user.firstName + " " + user.lastName)
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://bullage-server.onrender.com/users/owner/${userFromLS.email}`,
+        url: `https://bullage-server.onrender.com/users/emailz/
+        owner/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -2099,7 +2101,8 @@ $("#cl").text(user.firstName + " " + user.lastName)
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://bullage-server.onrender.com/users/owner/${userFromLS.email}`,
+        url: `https://bullage-server.onrender.com/users/emailz/
+        owner/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {

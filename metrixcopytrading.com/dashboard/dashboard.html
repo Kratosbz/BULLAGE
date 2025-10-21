@@ -603,12 +603,7 @@ display: block;
             
                         const response = await $.ajax({
                             type: "GET",
-<<<<<<< HEAD
-                            url: `https://bullage-server.onrender.com/users/emailz/
-        ${userFromLS.email}`,
-=======
                             url: `https://bullage-server.onrender.com/users/emailz/${userFromLS.email}`,
->>>>>>> ee580ed039e6b54fd96e991f4848056a5fcac17d
                             dataType: "json",
                             timeout: 30000,
                             success: async function (data) {
